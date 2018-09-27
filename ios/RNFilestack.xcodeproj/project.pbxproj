@@ -14,6 +14,18 @@
 		B3E7B58A1CC2AC0600A0062D /* RNFilestack.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNFilestack.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		348C0392215D6AB00040CE3A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = wrapper.scnassets;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# copySceneKitAssets\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -99,6 +111,7 @@
 				58B511D91A9E6C8500147676 /* CopyFiles */,
 			);
 			buildRules = (
+				348C0392215D6AB00040CE3A /* PBXBuildRule */,
 			);
 			dependencies = (
 			);

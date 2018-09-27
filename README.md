@@ -6,15 +6,16 @@
 
 ### Mostly automatic installation iOS
 
-`$ react-native link react-native-filestack-client`
-
-1. Add FilestackSDK and its dependencies (CryptoSwift & Almofire) frameworks to embedded binaries. They are located at node_modules/react-native-filestack-client/ios/Libraries/.
-
 ### iOS
 
 `$ react-native link react-native-filestack-client`
 
-1.
+1. FilestackSDK and its dependencies (CryptoSwift & Almofire) must be installed.
+   It's up to you to include them in your project. You can install via your
+   Podfile, for example. I've included the .framework files in ios/Libraries
+   for convenience.
+2. Add an empty .swift file to your project, which will launch a prompt to create
+   a bridging header file.
 
 ### Manual installation
 
@@ -23,7 +24,8 @@
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `react-native-filestack-client` and add `RNFilestack.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNFilestack.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+4. Follow steps 1 & 2 in Mostly automatic installation iOS.
+5. Run your project (`Cmd+R`)<
 
 #### Android
 
