@@ -1,0 +1,11 @@
+framework module FilestackSDK {
+  umbrella header "FilestackSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module FilestackSDK.Swift {
+    header "FilestackSDK-Swift.h"
+    requires objc
+}
